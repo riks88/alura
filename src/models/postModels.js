@@ -1,6 +1,5 @@
-import 'dotenv/config';
-import pkg from 'mongodb';
-const { ObjectId } = pkg;
+import 'dotenv/config'; //google cloud
+import { ObjectId } from "mongodb";
 import connectDB from "../config/dbConfig.js";
 
 const connection = await connectDB(process.env.STRING_CONNECTION)
